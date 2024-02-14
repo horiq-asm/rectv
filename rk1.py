@@ -25,7 +25,7 @@ for line in f:
           print(minute, mylist[4])
           if (minute  < 55  and  ( int(mylist[4]) - minute) <=5  and  int(mylist[4]) > minute)  or  ( minute  >= 55 and int(mylist[4]) <5):
                cmd = f"/usr/local/bin/recpt1  --b25 --strip " + mylist[6] + " " + str(int(mylist[5])*60+60) + " /media/tvrec/" + mylist[7] + mylist[1] + mylist[2] + mylist[3] + mylist[4] + ".ts &"
-               print(cmd)
+#               print(cmd)
                args = shlex.split(cmd)
                ret = subprocess.call(args)
                f.close()
