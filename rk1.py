@@ -1,7 +1,7 @@
 import os
 import datetime
 import subprocess, shlex
-os.system('curl -o /home/pi/rr.txt https://www.asmtek.co.jp/rq/rr.txt')
+os.system('curl -o /home/pi/rr.txt https://www.xxxxx.jp/rq/rr.txt')
 f = open("rr.txt", "r")
 for line in f:
    mylist = line.split(' ')
