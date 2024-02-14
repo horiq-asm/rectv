@@ -20,7 +20,7 @@ for line in f:
          day = datetime.datetime.now() + datetime.timedelta(days = 1).day
          month = datetime.datetime.now() + datetime.timedelta(days = 1).month
          year  = datetime.datetime.now() + datetime.timedelta(days = 1).year
-   if dt_now.year == (int(mylist[0]))  and dt_now.month == (int(mylist[1]))  and dt_now.day == (int(mylist[2])):
+   if year == (int(mylist[0]))  and month == (int(mylist[1]))  and day == (int(mylist[2])):
        if hour == (int(mylist[3])):
           if (minute  < 55  and  ( int(mylist[4]) - minute) <=5  and  int(mylist[4]) > minute)  or  ( minute  >= 55 and int(mylist[4]) <5):
                cmd = f"/usr/local/bin/recpt1  --b25 --strip " + mylist[6] + " " + str(int(mylist[5])*60+60) + " /media/tvrec/" + mylist[7] + mylist[1] + mylist[2] + mylist[3] + mylist[4] + ".ts &"
