@@ -2,7 +2,11 @@
 >rectv　raspberry　pi　CM4　light　1Gでoverlay動作確認,<br>
 cronで5分毎に起動<br>
 4-59/5 * * * * /usr/bin/python3 /home/pi/rk1.py<br>
-web上の録画予約データ<br>
+=======上記は録画機の設定ファイルです<br>
+recpt1以外は動かないので軽い動作ができています。<br>
+録画予約は別途webサーバで行います。<br>
+ktest.html   rokuga.cgi がそのファイルになります。<br>
+web上の録画予約データ例<br>
 2024 02 13 22 00 45 31 正直不動産(6) 00<br>
 2024 02 14 02 30 30 101 スイス・氷河特急の旅 00<br>
 2024 02 14 10 00 60 101 幕末の冒険者・ジョン万次郎 00<br>
